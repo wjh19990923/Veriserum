@@ -1,20 +1,18 @@
 
-<p align="left">
-  <img src="lmb_logo.png" alt="LMB Logo" width="360"/>
-</p>
-# Veriserum (determined to be published on MICCAI 2025)
+# Veriserum
 
-**Veriserum**: A dual-plane fluoroscopic dataset with implant phantoms for deep learning in medical imaging.
+Veriserum: A Dual-Plane Fluoroscopic Dataset with Knee Implant Phantoms for Deep Learning in Medical Imaging (MICCAI 2025)
 
-Authors: Jinhao Wang, Florian Vogl, William R.Taylor;
+Jinhao Wang, Florian Vogl, Pascal Schütz, Saša Ćuković & William R. Taylor
 
-Address:
-Institut für Biomechanik
-Gloriastrasse 37/ 39
-8092 Zürich
-Switzerland
+Group page: https://movement.ethz.ch/
 
-NB: The relevant paper is not yet published. If you are interested please contact first author. After open publication, you may cite the paper and free to use the dataset.
+Original article: https://link.springer.com/chapter/10.1007/978-3-032-05169-1_62
+
+arXiv: https://arxiv.org/abs/2509.05483
+
+## Cite this paper
+Wang, J., Vogl, F., Schütz, P., Ćuković, S., Taylor, W.R. (2026). Veriserum: A Dual-Plane Fluoroscopic Dataset with Knee Implant Phantoms for Deep Learning in Medical Imaging. In: Gee, J.C., et al. Medical Image Computing and Computer Assisted Intervention – MICCAI 2025. MICCAI 2025. Lecture Notes in Computer Science, vol 15972. Springer, Cham. https://doi.org/10.1007/978-3-032-05169-1_62
 
 <div style="display: flex; gap: 10px;">
   <img src="image-1.png" width="49%"/>
@@ -27,11 +25,12 @@ NB: The relevant paper is not yet published. If you are interested please contac
 ![alt text](image.png)
 
 https://doi.org/10.3929/ethz-b-000701146
-- original images
-- sqlite3 database for all poses: veriserum original target pose (from patients' data), refined true pose (by automated registration), and 390 manually matched pose.
+- Original images (X-ray, Calibrations)
+- Sqlite3 database for all poses: veriserum original target pose (from patients' data), refined true pose (by automated registration), and 390 manually matched pose.
+
 ## Overview
 
-Veriserum is an open-source dataset specifically designed for advancing deep learning in medical imaging, particularly in fluoroscopic image analysis. This dataset provides dual-plane fluoroscopic images with implant phantoms, enabling researchers to explore applications in biomechanics, computer vision, and pose estimation. Veriserum is freely available to support research communities in developing and testing algorithms in areas like 2D/3D image registration, X-ray distortion calibration, segmentation, and 3D reconstruction.
+Veriserum is an open-source dataset designed to support the training of deep learning registration for dual-plane fluoroscopic analysis. It comprises approximately 110,000 X-ray images of 10 knee implant pair combinations (2 femur and 5 tibia implants) captured during 1,600 trials, incorporating poses associated with daily activities such as level gait and ramp descent. Each image is annotated with an automatically registered ground-truth pose, while 200 images include manually registered poses for benchmarking. Key features of Veriserum include dual-plane images and calibration tools. The dataset aims to support the development of applications such as 2D/3D image registration, image segmentation, X-ray distortion cor- rection, and 3D reconstruction. Freely accessible, Veriserum aims to ad- vance computer vision and medical imaging research by providing a re- producible benchmark for algorithm development and evaluation. The Veriserum dataset used in this study is publicly available via https: //movement.ethz.ch/data-repository/veriserum.html, with the data stored at ETH Zürich Research Collections: https://doi.org/10.3929/ ethz-b-000701146.
 
 ### Key Features
 - **Dual-Plane Fluoroscopy**: Paired images from two perspectives facilitate 3D reconstruction and pose estimation.
@@ -74,7 +73,7 @@ project_directory/
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/yourusername/veriserum.git
+    git clone https://github.com/wjh19990923/Veriserum.git
     cd veriserum
     ```
 
